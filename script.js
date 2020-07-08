@@ -91,8 +91,8 @@ startEl.addEventListener ("click", function() {
 
 // Display Input ===================================================
 
-// WHEN game is over
-    // CLear screen
+// When game is over
+    // Clear screen
     // Reset Timer
     // Subimt button Appears
 
