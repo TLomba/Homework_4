@@ -4,6 +4,9 @@
 // create variable
 var secondsLeft = 10;
 var score = 0;
+// define the buttons
+// put the questions and choicesinto the buttons
+// call it using key and array and the object of the array
 
 // var questions
 var quiz = [
@@ -62,10 +65,14 @@ var quiz = [
 // First Window with a Greeting called Coding Quiz Challenge that is timed
 
 // Call Funcitons =========================================
+// create a function that is basedon all the things thta need to happen when click start
+// the start button disappears
+// clock starts
+// frst question and set of answers shows up
 onclick = function () {
   var startEl = document.getElementById("StartBtn");
   console.log();
-
+  StartBtn.addEventListener;
   // access the start screen element
   //   Bubbling? -
   event.stopPropagation();

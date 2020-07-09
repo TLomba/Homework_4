@@ -19,24 +19,33 @@
             <div class=row-1>
                 <h1 class="text-center">Famous Scientists Quiz</h1>
             </div>
+            <br>
+            <p class="text-center instruction">
+                This is a timed quiz! Answer the questions correctly for a high score. If you get any wrong time
+                will be subtracted from the clock. Good luck!
+            </p>
             <div class=row-2>
                 <h2 class="text-center" id="questionTitle">Questions</h2>
             </div>
             <!-- Start Button -->
             <div>
                 <button type="button" id="StartBtn" class="btn btn-light mx-auto d-block">Start</button>
-                <!-- Timer -->
-                <span class="text-center" id="timer">0</span>
-
+            </div>
+            <!-- Timer -->
+            <div>
+                <span class="row-3 text-auto" id="timer">0</span>
+            </div>
+            <div>
                 <button type="button" class="btn btn-secondary btn-lg btn-block">answerA</button>
                 <button type="button" class="btn btn-secondary btn-lg btn-block">answerB</button>
                 <button type="button" class="btn btn-secondary btn-lg btn-block">answerC</button>
-                <div class="container row" id="quiz">
-                    <!-- Why does it update in a button?! -->
-                    <button type="button" id="button">Answer updates here</button>
-                    <div id="results"></div>
-                </div>
             </div>
+            <div class="container row" id="quiz">
+                <!-- Why does it update in a button?! -->
+                <button type="button" id="button">Answer updates here</button>
+                <div id="results"></div>
+            </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -48,6 +57,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

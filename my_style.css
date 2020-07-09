@@ -3,8 +3,16 @@ body {
 }
 
 #button {
-  margin: 0;
+  margin: 4px;
   position: absolute;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  padding: 4px;
+}
+
+.container {
+  width: 90%;
+  margin-top: 50px;
+  background-color: rgb(192, 189, 189);
+  padding: 10px;
 }
