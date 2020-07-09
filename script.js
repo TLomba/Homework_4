@@ -1,100 +1,118 @@
 // Dependencies DOM Elements ==============================
 // Start Data
-var timerEl = document.querySelector(".timer");
-var startEl = document.querySelector("#start");
 
 // create variable
 var secondsLeft = 10;
 var score = 0;
 
-  // var questions
-  var quiz [
-
-  // Var responses
-//   Question 1
-    {
-        q1 : "Who was Einstein?",
-        a1: "The author of the Theory of Relativity and Special Relativity",
-        b1: "He discovered the Law of Gravity",
-        c1: "A Heavy Metal Guitarist",
-    },
-    // Question 2
-    {
-        q2: "Who was Max Planck?",
-        a2: "Answer option",
-        b2: "Answer option",
-        c2: "Answer option",
-    },
-    // Question 3
-    {
-        q3: "Who was Marie Curie?",
-        a3: "Answer option",
-        b3: "Answer option",
-        c3: "Answer option",
-    },
-    // Question 4
-    {
-        q4: "Who was Nikola Tesle?",
-        a4: "Answer option",
-        b4: "Answer option",
-        c4: "Answer option",
-    },
+// var questions
+var quiz = [
+  //   Question 1
+  {
+    Question: "Who was Einstein?",
+    choices: [
+      "The author of the Theory of Relativity and Special Relativity",
+      "He discovered the Law of Gravity",
+      "In his spare time he was a Guitarist that authored the hit song Heavy Metals",
+    ],
+    answer: "The author of the Theory of Relativity and Special Relativity",
+  },
+  // Question 2
+  {
+    Question: "What was Max Planck famous for?",
+    choices: [
+      "He was a scientist and also a pirate who forced his victims to walk the plank",
+      "He discoverd the constant 'h'",
+      "He discovered how to make carbonated drinks",
+    ],
+    answer: "He discoverd the constant 'h'",
+  },
+  // Question 3
+  {
+    Question: "What was Marie Curie famous for?",
+    choices: [
+      "She invented a new method for preserving corpses",
+      "A cook famous for spreading Typhoid Fever",
+      "She discovered Radium and Polonium, and the development of X-Rays",
+    ],
+    answer: "She discovered Radium and Polonium, and the development of X-Rays",
+  },
+  // Question 4
+  {
+    Question: "Who was Nikola Tesla?",
+    choices: [
+      "The inventor or the fasted electric car",
+      "A tech wizard that is now one of the most powerful people on the planet",
+      "Experimented with wireless power transmission by electrifying butterflies and often left residents without power in Colorado",
+    ],
+    answer:
+      "Experimented with wireless power transmission by electrifying butterflies and often left residents without power in Colorado",
+  },
 ];
 
-var asnwers = [
-    // answer: PUT THE ANSWERS IN HERE IN AN ARRAY
-]
-var startEl = document.querySelector("")
+// Var responses - button that is a larger box and clickable with the answer in the box the answer is in the button
 
+// get the questions into the buttons
+// give answer and populate next question and add 25 points to the score
+// Create a function that populates the buttons
+// create a scoring function
+// create function that "secondsLeft" where 5 seconds is subtracted on wrong answers
 
 // User Interaction =======================================
 // First Window with a Greeting called Coding Quiz Challenge that is timed
 
-// Helper function ========================================
-// Start Button - create the start button
-// Timer Starts or code for the timer to begin
-startEl.addEventListener ("click", function() {
-    startEl.getElementsByClassName.display = "none";
-    var myInterval = setINterval(function(){
-        console.log("it's working");
-        timerEl.textContent = secondsLeft;
-        secondsLeft--;
-        if (secondsLeft === -1) {
-        // NOT WORKING HERE DISPLAY IS OFF
-            startEl.getElementsByClassName.display = secondsLeft;
-            clearInterval(myInterval);
-            alert("Time is up");
-        }
-    }, 1000);
-    }
-});
+// Call Funcitons =========================================
+onclick = function () {
+  var startEl = document.getElementById("StartBtn");
+  console.log();
+
+  // access the start screen element
+  //   Bubbling? -
+  event.stopPropagation();
+  startEl.style.display = "none";
+  console.log();
+
+  function runClock() {
+    time--;
+    timerEl.textContent = time;
+    console.log();
+    // if time <= 0 then end quiz
+  }
+  // Timer Starts or code for the timer to begin upon click
+  var time = 120;
+  var timerEl = document.getElementById("timer");
+  var timer = setInterval(runClock, 1000);
+  event.stopPropagation();
+  console.log();
+
+  //   The buttons for the questions have to pop up and be within containers/boxes
+  var currentQuestionI = 0;
+  var questionTitle = document.getElementById("questionTitle");
+  function getQuestion() {
+    var currQuestion = quiz[QuestionI];
+    questionTitle.textContent = currQuestion.Question;
+    getQuestion();
+    console.log();
+  }
+};
+
+function getClick() {}
+
+function checkAnswers() {
+  // the function would take the user's selected answer and match it up against each option in answerKey array with .include method which means that if its included its true
+  // result - if there is a match then +25 points if no match subtract 5 seconds
+}
+
+// Start Button - add event listener for whne the button is clicked
+
 // Question 1 appears]
-// Each question has multiple choice answers
-
-// Handler Funciton =========================================
-// Loop through the array of questions, each of which is an object - If Else
-// Check Answer use answer array and .include function
-
-// If the answer is correct 
-    // alert correct
-    // move to next question
-
-// Else answer is incorrect 
-    // alert incorrect
-    // subract 10 seconds from the timer
-    // move to next question
-
-
-// When all questions are answeres or timer reaches 0
-// Then the game is over
-
 
 // Display Input ===================================================
 
 // When game is over
-    // Clear screen
-    // Reset Timer
-    // Subimt button Appears
+// Clear screen
+// Reset Timer
+// Subimt button Appears
 
 // Save initials option shows up
 // Upon clicking the submit button

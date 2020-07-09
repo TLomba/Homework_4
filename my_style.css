@@ -1,0 +1,10 @@
+body {
+  font-family: "Open Sans";
+}
+
+#button {
+  margin: 0;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
