@@ -2,8 +2,13 @@ body {
   font-family: "Open Sans";
 }
 
-.btn,
-#questionTitle {
+#StartBtn,
+.timer {
+  background-color: rgb(192, 189, 189);
+  border: black;
+}
+
+.btn {
   margin: 4px;
   position: absolute;
   -ms-transform: translate(-50%, -50%);

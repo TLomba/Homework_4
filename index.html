@@ -26,29 +26,29 @@
             </p>
             <!-- Timer -->
             <div>
-                <span class="text-center text-auto" id="timer">0</span>
-            </div>
-            <div class="row-2">
-                <button type="button" id="StartBtn" class="btn btn-light mx-auto d-block">Start</button></div>
-            <div class="row-2">
-                <h2 class="text-center" id="questionTitle">Questions</h2>
-            </div>
-            <!-- Question Button -->
-            <div>
-                <button type="button" class="btn btn-secondary btn-lg btn-block currQuestion">Questions</button>
-            </div>
-            <div>
-                <button type="button" class="btn btn-secondary btn-lg btn-block">answerA</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block">answerB</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block">answerC</button>
-            </div>
-            <div class="container row" id="quiz">
-                <!-- Why does it update in a button?! -->
-                <button type="button" id="button">Answer updates here</button>
-                <div id="results"></div>
-            </div>
-
+                <button type="button" class="timer btn btn-light mx-auto d-block">0</button></div>
         </div>
+        <div class="row-2">
+            <button type="button" id="StartBtn" class="btn btn-light mx-auto d-block">Start</button></div>
+        <div class="row-2">
+            <h2 class="text-center" id="questionTitle">Questions</h2>
+        </div>
+        <div>
+            <!-- Question Button -->
+            <button type="button" id="currQuestion" class="btn btn-secondary btn-lg btn-block">Questions will
+                populate here</button>
+            <!-- Answer Buttons -->
+            <button type="button" class="btn btn-secondary btn-lg btn-block">answerA</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">answerB</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">answerC</button>
+        </div>
+        <div class="container row" id="quiz">
+            <!-- Why does it update in a button?! -->
+            <button type="button" id="button">Answer updates here</button>
+            <div id="results"></div>
+        </div>
+
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
