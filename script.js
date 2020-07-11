@@ -2,7 +2,6 @@
 // Start Data
 
 // create variable
-var secondsLeft = 10;
 var score = 0;
 var time = 120;
 // define the buttons
@@ -13,7 +12,7 @@ var time = 120;
 var quiz = [
   //   Question 1
   {
-    currQuestion: "Who was Einstein?",
+    Question: "Who was Einstein?",
     choices: [
       "The author of the Theory of Relativity and Special Relativity",
       "He discovered the Law of Gravity",
@@ -23,7 +22,7 @@ var quiz = [
   },
   // Question 2
   {
-    currQuestion: "What was Max Planck famous for?",
+    Question: "What was Max Planck famous for?",
     choices: [
       "He was a scientist and also a pirate who forced his victims to walk the plank",
       "He discoverd the constant 'h'",
@@ -33,7 +32,7 @@ var quiz = [
   },
   // Question 3
   {
-    currQuestion: "What was Marie Curie famous for?",
+    Question: "What was Marie Curie famous for?",
     choices: [
       "She invented a new method for preserving corpses",
       "A cook famous for spreading Typhoid Fever",
@@ -43,7 +42,7 @@ var quiz = [
   },
   // Question 4
   {
-    currQuestion: "Who was Nikola Tesla?",
+    Question: "Who was Nikola Tesla?",
     choices: [
       "The inventor or the fasted electric car",
       "A tech wizard that is now one of the most powerful people on the planet",
@@ -74,7 +73,7 @@ onclick = function () {
   var startEl = document.getElementById("StartBtn");
   console.log();
   StartBtn.addEventListener;
-  // access the start screen element
+  // access the start button screen element
   startEl.style.display = "none";
   console.log();
 
@@ -84,14 +83,10 @@ onclick = function () {
     console.log();
     // if time <= 0 then end quiz
   }
-  // Timer Starts or code for the timer to begin upon click
-  var time = 120;
-  var timerEl = document.getElementById("timer");
-  var timer = setInterval(runClock, 1000);
-  console.log();
 
   //   The buttons for the questions have to pop up and be within containers/boxes
-  var currentQuestion[i] = 0;
+  // Click button and a question pops up
+  var currentQuestionI = 0;
   var questionTitle = document.getElementById("currQuestion");
   function getQuestion() {
     var currQuestion = quiz[Question[i]];
