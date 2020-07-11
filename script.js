@@ -13,7 +13,7 @@ var time = 120;
 var quiz = [
   //   Question 1
   {
-    Question: "Who was Einstein?",
+    currQuestion: "Who was Einstein?",
     choices: [
       "The author of the Theory of Relativity and Special Relativity",
       "He discovered the Law of Gravity",
@@ -23,7 +23,7 @@ var quiz = [
   },
   // Question 2
   {
-    Question: "What was Max Planck famous for?",
+    currQuestion: "What was Max Planck famous for?",
     choices: [
       "He was a scientist and also a pirate who forced his victims to walk the plank",
       "He discoverd the constant 'h'",
@@ -33,7 +33,7 @@ var quiz = [
   },
   // Question 3
   {
-    Question: "What was Marie Curie famous for?",
+    currQuestion: "What was Marie Curie famous for?",
     choices: [
       "She invented a new method for preserving corpses",
       "A cook famous for spreading Typhoid Fever",
@@ -43,7 +43,7 @@ var quiz = [
   },
   // Question 4
   {
-    Question: "Who was Nikola Tesla?",
+    currQuestion: "Who was Nikola Tesla?",
     choices: [
       "The inventor or the fasted electric car",
       "A tech wizard that is now one of the most powerful people on the planet",
@@ -91,10 +91,10 @@ onclick = function () {
   console.log();
 
   //   The buttons for the questions have to pop up and be within containers/boxes
-  var currentQuestionI = 0;
-  var questionTitle = document.getElementById("questionTitle");
+  var currentQuestion[i] = 0;
+  var questionTitle = document.getElementById("currQuestion");
   function getQuestion() {
-    var currQuestion = quiz[QuestionI];
+    var currQuestion = quiz[Question[i]];
     questionTitle.textContent = currQuestion.Question;
     getQuestion();
     console.log();
