@@ -4,6 +4,7 @@
 // create variable
 var secondsLeft = 10;
 var score = 0;
+var time = 120;
 // define the buttons
 // put the questions and choicesinto the buttons
 // call it using key and array and the object of the array
@@ -74,8 +75,6 @@ onclick = function () {
   console.log();
   StartBtn.addEventListener;
   // access the start screen element
-  //   Bubbling? -
-  event.stopPropagation();
   startEl.style.display = "none";
   console.log();
 
@@ -89,7 +88,6 @@ onclick = function () {
   var time = 120;
   var timerEl = document.getElementById("timer");
   var timer = setInterval(runClock, 1000);
-  event.stopPropagation();
   console.log();
 
   //   The buttons for the questions have to pop up and be within containers/boxes
