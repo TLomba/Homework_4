@@ -21,15 +21,19 @@
             </div>
             <br>
             <p class="text-center instruction">
-                This is a timed quiz! Answer the questions correctly for a high score. If you get any wrong time
+                This is a timed quiz! Answer the questions correctly for a high score. If you get any wrong, time
                 will be subtracted from the clock. Good luck!
             </p>
-            <!-- Timer -->
-            <div>
-                <button type="button" class="timer btn btn-light mx-auto d-block">0</button></div>
+            <!-- Start button whch disappears and the Time is behind so it becomes visible -->
+            <div class="row-2">
+                <button type="button" id="StartBtn" class="front btn btn-light mx-auto d-block">Start</button>
+                <div class="behind-container">
+                    <div>
+                        <button type="button" class=" behind timer btn btn-light mx-auto d-block">0</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row-2">
-            <button type="button" id="StartBtn" class="btn btn-light mx-auto d-block">Start</button></div>
         <div class="row-2">
             <h2 class="text-center" id="questionTitle">Questions</h2>
         </div>
@@ -42,7 +46,8 @@
             <button type="button" class="btn btn-secondary btn-lg btn-block">answerB</button>
             <button type="button" class="btn btn-secondary btn-lg btn-block">answerC</button>
         </div>
-        <div class="container row" id="quiz">
+        <br>
+        <div class="d-flex justify-content-center" id="quiz">
             <!-- Why does it update in a button?! -->
             <button type="button" id="button">Answer updates here</button>
             <div id="results"></div>
