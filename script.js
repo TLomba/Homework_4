@@ -1,6 +1,9 @@
 // Dependencies DOM Elements ==============================
 var startButton = document.getElementById("StartBtn");
 var nextButton = document.getElementById("NextBtn");
+var questionContainerElement = document.getElementById("question-container");
+var questonElement = document.getElementById("question");
+var answerButtonElement = document.getElementById("answer-btns");
 
 // create variable
 var score = 0;
@@ -13,7 +16,7 @@ var time = 120;
 var quiz = [
   //   Question 1
   {
-    Question: "Who was Einstein?",
+    question: "Who was Einstein?",
     choices: [
       "The author of the Theory of Relativity and Special Relativity",
       "He discovered the Law of Gravity",
@@ -23,7 +26,7 @@ var quiz = [
   },
   // Question 2
   {
-    Question: "What was Max Planck famous for?",
+    question: "What was Max Planck famous for?",
     choices: [
       "He was a scientist and also a pirate who forced his victims to walk the plank",
       "He discoverd the constant 'h'",
@@ -33,7 +36,7 @@ var quiz = [
   },
   // Question 3
   {
-    Question: "What was Marie Curie famous for?",
+    question: "What was Marie Curie famous for?",
     choices: [
       "She invented a new method for preserving corpses",
       "A cook famous for spreading Typhoid Fever",
@@ -43,7 +46,7 @@ var quiz = [
   },
   // Question 4
   {
-    Question: "Who was Nikola Tesla?",
+    question: "Who was Nikola Tesla?",
     choices: [
       "The inventor or the fasted electric car",
       "A tech wizard that is now one of the most powerful people on the planet",
