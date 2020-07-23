@@ -4,9 +4,10 @@ var nextButton = document.getElementById("NextBtn");
 var questionContainerElement = document.getElementById("question-container");
 var questonElement = document.getElementById("question");
 var answerButtonElement = document.getElementById("answer-btns");
+var gameOverElement = document.querySelector("#gameOver");
 
 var score = 0;
-var time = 120;
+var timerElement = document.getElementById("timer");
 // define the buttons
 // put the questions and choicesinto the buttons
 // call it using key and array and the object of the array
@@ -57,11 +58,10 @@ var quiz = [
 ];
 
 // Start Button - add event listener for whne the button is clicked
-startButton.addEventListener("click", startQuiz)
+startButton.addEventListener("click", startQuiz);
 // Question 1 appears]
 
 // Display Input ===================================================
-
 
 // When game is over
 // Clear screen
