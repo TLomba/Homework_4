@@ -5,14 +5,17 @@ var questionContainerElement = document.getElementById("question-container");
 var questonElement = document.getElementById("question");
 var answerButtonElement = document.getElementById("answer-btns");
 var gameOverElement = document.querySelector("#gameOver");
+var timerElement = document.getElementById("timer");
 
 var score = 0;
-var timerElement = document.getElementById("timer");
+var timer;
+var gameOver;
+var answerChosen = true;
 // define the buttons
 // put the questions and choicesinto the buttons
 // call it using key and array and the object of the array
 
-// var questions
+// var questions array objects
 var quiz = [
   //   Question 1
   {
