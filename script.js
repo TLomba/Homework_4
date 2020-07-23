@@ -5,7 +5,6 @@ var questionContainerElement = document.getElementById("question-container");
 var questonElement = document.getElementById("question");
 var answerButtonElement = document.getElementById("answer-btns");
 
-// create variable
 var score = 0;
 var time = 120;
 // define the buttons
@@ -58,10 +57,11 @@ var quiz = [
 ];
 
 // Start Button - add event listener for whne the button is clicked
-
+startButton.addEventListener("click", startQuiz)
 // Question 1 appears]
 
 // Display Input ===================================================
+
 
 // When game is over
 // Clear screen
